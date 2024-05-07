@@ -1,0 +1,25 @@
+/* Add your CSS styles here */
+.search-container {
+    margin-bottom: 20px;
+  }
+  
+  #searchResults {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .movie-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .favorite-btn {
+    margin-top: 10px;
+  }
+  
