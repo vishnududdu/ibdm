@@ -117,7 +117,7 @@ function displayFavoriteMovies() {
     favoriteMovies.innerHTML =``;
     let favorites = JSON.parse(localStorage.getItem('favoriteMovies')) || [];
     if (favorites.length === 0) {
-        // favoriteMovies.innerHTML = `<p>No favorite movies yet</p>`;
+        favoriteMovies.innerHTML = `<p>No favorite movies yet</p>`;
     } else {
         favorites.forEach(async id => {
             try {
