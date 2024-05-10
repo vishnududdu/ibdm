@@ -1,16 +1,22 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>IMDB</title>
-  <link rel="stylesheet" href="IMBD.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini IMDB Clone</title>
+    <link rel="stylesheet" href="IMBD.css">
 </head>
 <body>
-  <div class="search-container">IMBD<br>
-    <input type="text" id="searchInput" placeholder="Search for a movie">
-    <button onclick="searchMovies()">Search</button>
-  </div>
-  
-  <div id="searchResults"></div>
-
-  <script src="IMBD.js"></script>
+    <header>
+        <h1>Mini IMDB Clone</h1>
+        <input type="text" id="searchInput" placeholder="Search for a movie...">
+        <a href="favorites.html"><button>Display Favorites</button></a>
+        <!-- <button id="search">Search</button> -->
+    </header>
+    <main id="mainContent">
+        <!-- Search results will be displayed here -->
+    </main>
+    
+    <script src="IMBD.js"></script>
 </body>
 </html>

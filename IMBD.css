@@ -1,25 +1,61 @@
-/* Add your CSS styles here */
-.search-container {
-    margin-bottom: 20px;
-  }
-  
-  #searchResults {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .movie-card {
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.movie-card {
     border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
     padding: 10px;
-  }
-  
-  .movie-card img {
+}
+
+.movie-card img {
     width: 100%;
-    height: auto;
-  }
-  
-  .favorite-btn {
-    margin-top: 10px;
-  }
-  
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.movie-card h3 {
+    margin: 0;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .movie-card {
+        width: calc(33.33% - 20px);
+        margin: 0 10px 20px;
+    }
+}
